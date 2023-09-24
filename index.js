@@ -15,6 +15,11 @@ app.get("/", (req, res) => {
 app.get("/category", (req, res) => {
   res.send(categories);
 });
+
+app.get("/news/all", (req, res) => {
+  res.send(news);
+});
+
 app.get("/news", (req, res) => {
   res.send(news);
 });
