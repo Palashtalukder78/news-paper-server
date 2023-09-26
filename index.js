@@ -12,12 +12,9 @@ app.get("/", (req, res) => {
   res.send("The NewsPaper server site is running!");
 });
 
+
 app.get("/category", (req, res) => {
   res.send(categories);
-});
-
-app.get("/news/all", (req, res) => {
-  res.send(news);
 });
 
 app.get("/news", (req, res) => {
@@ -33,6 +30,7 @@ app.get("/category/:id", (req, res) => {
     res.send(CategoryNews);
   }
 });
+
 
 app.get("/news/:id", (req, res) => {
   const id = req.params.id;
